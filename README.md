@@ -20,7 +20,7 @@ Tested Ventura, Sonoma.
 - <b>Ports</b>: 2 x USB-C Thunderbolt 3, 1 x USB 3.2, 1x HDMI Output
 
 # Improving Performance
-This laptop has a bad performance, slow and stuttering experience when using this laptop with macOS. Its caused by the the thermal and power limit throttling. You can do use a good quality thermal paste, and do some modification of the PL1 and PL2 and the Time Window value using the voltageshift fork from [here] (https://github.com/daliansky/XiaoMi-Pro/files/3101379/VoltageShift.zip) - credits to buliaoyin for the custom binaries
+This laptop has a bad performance, slow and stuttering experience when using this laptop with macOS. Its caused by the the thermal and power limit throttling. You can do use a good quality thermal paste, and do some modification of the PL1 and PL2 and the Time Window value using the voltageshift fork from [here](https://github.com/daliansky/XiaoMi-Pro/files/3101379/VoltageShift.zip) - credits to buliaoyin for the custom binaries
 
 
 i applied 17W with 28673s Time Window and 25W with 28673s for my cofig (yours may depend on your thermal condition, find the ones config that suits better for you)
@@ -64,5 +64,5 @@ i applied 17W with 28673s Time Window and 25W with 28673s for my cofig (yours ma
 - [blackosx](https://github.com/blackosx/OpenCanopyIcons) for OpenCanopyIcons theme.
 - [al3xtjames](https://github.com/al3xtjames) for clover-theme-oss theme.
 - [ImmersiveX](https://github.com/ImmersiveX) for clover-theme-minimal-dark theme.
-- [buliaoyin] (https://github.com/buliaoyin/VoltageShift) for the fork of VoltageShift
+- [buliaoyin](https://github.com/buliaoyin/VoltageShift) for the fork of VoltageShift
 - And anyone else that helped to develop and improve hackintoshing.
