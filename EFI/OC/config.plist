@@ -122,7 +122,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-RHUB.aml</string>
 			</dict>
@@ -146,7 +146,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-SLPB.aml</string>
 			</dict>
@@ -258,7 +258,37 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>Rename EC0 method BTST to ECST</string>
+				<string>Rename EC method BTIX to XTIX (SSDT-BAT)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>E0JUSVgJ</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>E1hUSVgJ</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>Rename EC method BTST to XTST (SSDT-BAT)</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -272,7 +302,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>FkVDU1QK</data>
+				<data>FlhUU1QK</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -648,6 +678,66 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
+				<string>TIMR IRQ 0 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>IgEAeQA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>IgAAeQA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>RTC fix to stop Post Error</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>RwFwAHAAAQg=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>RwFwAHAAAQI=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
 				<string>Rename Method(_UPC,0,S) to XUPC, pair with SSDT-USB.aml (USB Port Customization)</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -684,7 +774,7 @@
 			<key>ResetHwSig</key>
 			<false/>
 			<key>ResetLogoStatus</key>
-			<true/>
+			<false/>
 			<key>SyncTableIds</key>
 			<false/>
 		</dict>
@@ -755,6 +845,8 @@
 			<true/>
 			<key>EnableWriteUnprotector</key>
 			<false/>
+			<key>FixupAppleEfiImages</key>
+			<false/>
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
@@ -793,9 +885,9 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>CQClPg==</data>
+				<data>CQCbPg==</data>
 				<key>device-id</key>
-				<data>pT4AAA==</data>
+				<data>mz4AAA==</data>
 				<key>enable-backlight-registers-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
@@ -808,18 +900,14 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
 				<key>framebuffer-flags</key>
 				<data>CgvjAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
 				<string>Intel(R) UHD Graphics 620</string>
+				<key>igfxfw</key>
+				<data>AgAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -873,7 +961,7 @@
 				<key>Comment</key>
 				<string>CPUFriend.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/CPUFriend</string>
 				<key>MaxKernel</key>
@@ -891,7 +979,7 @@
 				<key>Comment</key>
 				<string>CPUFriendDataProvider.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -1211,49 +1299,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>FakePCIID.kext</string>
+				<string>NVMeFix.kext</string>
 				<key>Comment</key>
-				<string>FakePCIID.kext</string>
+				<string>NVMeFix.kext</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/FakePCIID</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>CustomPeripheral.kext</string>
-				<key>Comment</key>
-				<string>CustomPeripheral.kext</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>AnyiSightCam.kext</string>
-				<key>Comment</key>
-				<string>AnyiSightCam.kext</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/NVMeFix</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1301,29 +1353,11 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>IntelBluetoothInjector.kext</string>
+				<string>BlueToolFixup.kext</string>
 				<key>Comment</key>
-				<string>IntelBluetoothInjector</string>
+				<string>BlueToolFixup.kext</string>
 				<key>Enabled</key>
 				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>BlueToolFixup.kext</string>
-				<key>Comment</key>
-				<string>BlueToolFixup.kext</string>
-				<key>Enabled</key>
-				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>MaxKernel</key>
@@ -1807,7 +1841,7 @@
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
-			<false/>
+			<true/>
 			<key>CustomPciSerialDevice</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -2072,7 +2106,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v -igfxvesa</string>
+				<string></string>
 				<key>csr-active-config</key>
 				<data>bwIAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -2143,21 +2177,21 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>FVF919902QX00001H</string>
+			<string>FVF923902GU0000JA</string>
 			<key>ProcessorType</key>
 			<integer>1793</integer>
 			<key>ROM</key>
-			<data>7sPbK/Qs</data>
+			<data>IJvNKyHO</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro15,2</string>
+			<string>MacBookPro15,4</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFYP0ZYL40Y</string>
+			<string>FVFYTAYHL40Y</string>
 			<key>SystemUUID</key>
-			<string>C9C433C5-5AE2-4851-BB7A-27A82222BD76</string>
+			<string>5C62D972-10B7-437D-A3A7-8B144E6DB4FB</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -2166,7 +2200,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Custom</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
